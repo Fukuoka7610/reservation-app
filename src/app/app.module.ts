@@ -4,14 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NavbarComponent } from './common/navbar/navbar.component';
 import { NgModule } from '@angular/core';
 
-@NgModule({
+@NgModule({ //下位層のファイルの宣言
   declarations: [
     AppComponent,
     NavbarComponent,
   ],
-  imports: [
+  imports: [ //上位層のファイルのインポート
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, //"app-routing.module.ts"をインポートしている
   ],
   providers: [],
   bootstrap: [AppComponent]
